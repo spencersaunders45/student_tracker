@@ -11,7 +11,7 @@ function App() {
   const [studentData, setStudentData] = useState({});
 
   useEffect(() => {
-    axios("https://api.hatchways.io/assessment/students")
+    axios() //removed the api address to prevent this project appearing in a specific search
       .then(res => setStudentData(res.data))
   }, [loaded])
 
